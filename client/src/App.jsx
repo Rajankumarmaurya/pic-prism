@@ -6,6 +6,8 @@ import Signup from './pages/Signup'
 import SellerDash from './pages/SellerDash'
 import BuyerDash from './pages/BuyerDash'
 import Navbar from './components/Navbar'
+import About from './pages/About'
+import Contact from './pages/Contact'
 const App = () => {
   return (
   <>
@@ -13,6 +15,8 @@ const App = () => {
   <Navbar/>
   <Routes>
     <Route path='/' element={<Home/>}/>
+    <Route path='/about' element={<About/>}/>
+    <Route path='/contact' element={<Contact/>}/>
     <Route path='/login' element={<Login/>}/>
     <Route path='/signup' element={<Signup/>}/>
     <Route path='/seller/profile' element={<SellerDash/>}/>
