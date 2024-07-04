@@ -4,8 +4,8 @@ const dotenv = require("dotenv");
 const PORT = 5000;
 const cors = require("cors");
 const connect = require("./config/connection");
-dotenv.config();
 
+dotenv.config();
 connect();
 app.use(cors());
 app.use(express.json());
