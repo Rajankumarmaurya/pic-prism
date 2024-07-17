@@ -1,9 +1,11 @@
 import React from 'react'
+import DashBoard from '../components/DashBoard'
 
 const SellerDash = () => {
   return (
     <div>
-      This is the seller dashboard
+      <DashBoard/>
+      
     </div>
   )
 }
