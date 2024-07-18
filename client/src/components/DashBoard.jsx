@@ -20,12 +20,12 @@ const DashBoard = () => {
       className={`fixed ${!sidebar == true
           ? "-translate-x-[500px] sm:translate-x-0"
           : "translate-x-0"
-        } flex text-lg font-semibold bg-white shadow-lg flex-col gap-2 w-fit min-h-screen p-3 list-none justify-between items-center`}
+        } ease-in-out duration-300 sm:static flex text-lg font-semibold bg-white shadow-lg flex-col gap-2 w-fit min-h-screen p-3 list-none justify-between items-center`}
     >
       <div>
         {/* CIRCLE WHERE THE FIRST LETTER  */}
         <div className="bg-black rounded-full my-5 w-fit py-4 px-6 text-white">
-          {author.charAt(0).toUpperCase()}
+          {author?.charAt(0).toUpperCase()}
         </div>
         {/* LIST ITEM */}
         <div className="flex flex-col gap-2">
